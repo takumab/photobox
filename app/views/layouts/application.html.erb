@@ -6,19 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </nav>
+    <%= render 'shared/header/nav' %>
     <%= yield %>
-    <footer>
-      &copy; 2015 Bike Berlin
-    </footer>
+    <%= render 'shared/footer/footer' %>
   </body>
 </html>
