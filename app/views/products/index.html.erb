@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
-  <div class="container">
+<h1>Photos</h1>
+  <section class="container">
     <div class="row">
     <% @products.each do |product| %>
       <div class="col-sm-2 col-md-4">
@@ -12,18 +12,13 @@
           <div class="panel-footer">
             <h3><%= link_to product.name, product %></h3>
             <p><%= product.description %></p>
+            <strong><%#= product.price %></strong>
           </div>
-
-
-          <strong><%#= product.price %></strong>
-
         </div>
-
       </div>
+    <% end %>
     </div>
-  </div>
-
-<% end %>
+  </section> <!-- /.container -->
 
 <br>
 
