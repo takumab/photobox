@@ -17,8 +17,19 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.panel-body {
+  padding: 0;
+}
 
+
+
+
+/* Footer */
 .footer {
-  height: 30px;
+  height: 200px;
   background: #eee;
+}
+
+.contacts {
+  list-style: none;
 }

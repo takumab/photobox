@@ -7,14 +7,12 @@
       <div class="col-sm-2 col-md-4">
         <div class="panel panel-default">
           <div class="panel-body">
-            <%= image_tag(product.image_url, class: "img-responsive") %>
+            <%= link_to image_tag(product.image_url, class: "img-responsive"), product %>
           </div>
           <div class="panel-footer">
-            <p><strong>$ <%= product.price %></strong></p>
-            <h3><%= link_to product.name, product %></h3>
+            <h3><%= product.name %></h3>
             <p><%= product.description %></p>
-
-
+            <p><strong>$ <%= product.price %></strong></p>
           </div>
         </div>
       </div>
