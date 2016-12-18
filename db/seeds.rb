@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Product.create(:name => "Test 6", :description => "test 6",
               :image_url => "beach_and_kite.jpg", :price => 11.99)
+              
